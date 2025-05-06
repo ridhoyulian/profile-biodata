@@ -1,0 +1,98 @@
+/* Tombol Filter */
+.btn-custom {
+    background-color: #FF6600;
+    /* Warna oranye */
+    color: white;
+    border: none;
+}
+
+.btn-custom:hover,
+.btn-custom.active {
+    background-color: #E65500;
+    /* Warna oranye lebih gelap */
+    color: white;
+}
+
+/* Kategori Proyek */
+.category {
+    display: block;
+    font-size: 14px;
+    color: #FF6600;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Kartu Proyek */
+.project-card {
+    background-color: #FFF7F2;
+    /* Warna background lembut */
+    border: none;
+    padding: 15px;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+/* Social Media Icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: #333;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #007bff;
+}
+
+/* Hero Section */
+.hero-text {
+    font-size: 14px;
+    /* Ukuran kecil untuk "Hi, I am" */
+}
+
+.hero-name {
+    font-weight: bold;
+    color: #FF7F2A;
+    /* Warna oranye */
+    font-size: 18px;
+}
+
+.hero-title {
+    font-weight: bold;
+    font-size: 50px;
+    /* Ukuran besar */
+    line-height: 1;
+}
+
+.hero-title span {
+    display: block;
+    /* Memisahkan "Web" dan "Developer" */
+}
+
+.hero-title .developer {
+    text-indent: 30px;
+    /* Geser "Developer" ke kanan */
+}
+
+/* Warna teks khusus */
+.text-orange {
+    color: #FF6600;
+    /* Warna orange sesuai gambar */
+}
+
+h5 {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
