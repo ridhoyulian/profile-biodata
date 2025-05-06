@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Daftar Produk dengan Filter</title>
+  <style>
+    .produk-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-top: 16px;
+    }
+    .produk {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 16px;
+      width: 200px;
+      box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+    }
+    .produk img {
+      width: 100%;
+      height: auto;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Daftar Produk</h1>
+
+  <label for="filterKategori">Filter berdasarkan kategori:</label>
+  <select id="filterKategori">
+    <option value="semua">Semua</option>
+    <option value="arabika">Arabika</option>
+    <option value="robusta">Robusta</option>
+    <option value="luwak">Luwak</option>
+  </select>
+
+  <div class="produk-container" id="produkContainer"></div>
+
+  <script>
+    const produk = [
+      {
+        nama: "Kopi Arabika Premium",
+        harga: 50000,
+        deskripsi: "Cita rasa asam dan aroma buah.",
+        gambar: "Gambar/Kopi Arabika Premium.jpg",
+        kategori: "arabika"
+      },
+      {
+        nama: "Kopi Robusta Strong",
+        harga: 40000,
+        deskripsi: "Rasa pahit, kadar kafein tinggi.",
+        gambar: "Gambar/Kopi Robusta Strong.jpg",
+        kategori: "robusta"
+      },
+      {
+        nama: "Kopi Luwak Asli",
+        harga: 150000,
+        deskripsi: "Kopi fermentasi alami.",
+        gambar: "Gambar/Kopi Luwak Asli.jpeg",
+        kategori: "luwak"
+      },
+      {
+        nama: "Kopi Arabika Light",
+        harga: 52000,
+        deskripsi: "Lebih ringan dan fruity.",
+        gambar: "Gambar/Kopi Arabika Light.jpeg",
+        kategori: "arabika"
+      }
+    ];
+
+    const container = document.getElementById('produkContainer');
+    const filterSelect = document.getElementById('filterKategori');
+
+    function tampilkanProduk(dataProduk) {
+      container.innerHTML = ""; // Kosongkan kontainer
+      dataProduk.forEach(item => {
+        const div = document.createElement('div');
+        div.className = 'produk';
+        div.innerHTML = `
+          <img src="${item.gambar}" alt="${item.nama}">
+          <h3>${item.nama}</h3>
+          <p>${item.deskripsi}</p>
+          <p><strong>Rp ${item.harga.toLocaleString('id-ID')}</strong></p>
+        `;
+        container.appendChild(div);
+      });
+    }
+
+    // Tampilkan semua produk saat pertama kali
+    tampilkanProduk(produk);
+
+    // Tambahkan event listener untuk filter
+    filterSelect.addEventListener('change', () => {
+      const kategoriDipilih = filterSelect.value;
+      if (kategoriDipilih === "semua") {
+        tampilkanProduk(produk);
+      } else {
+        const hasilFilter = produk.filter(item => item.kategori === kategoriDipilih);
+        tampilkanProduk(hasilFilter);
+      }
+    });
+  </script>
+
+</body>
+</html>
