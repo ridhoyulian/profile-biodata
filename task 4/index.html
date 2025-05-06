@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portofolio Web Developer</title>
+
+    <!-- Bootstrap & FontAwesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">RIDHO<span class="text-primary">UI</span></a>
+            <!-- Pastikan button ini memiliki atribut `data-bs-target` yang benar -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Testimonials</a></li>
+                </ul>
+                <a class="btn btn-custom text-black px-3" href="#">Download CV</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="container text-center text-lg-start mt-5">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <p class="hero-text">Hi I am</p>
+                <p class="hero-name">Ridho Yulian Andiantinputra</p>
+                <h1 class="hero-title">
+                    <span>Web</span>
+                    <span class="developer">Developer</span>
+                </h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique amet sed massa nibh lectus netus.
+                </p>
+                <a href="#" class="btn btn-custom" data-bs-toggle="modal" data-bs-target="#hireMeModal">Hire Me</a>
+            </div>
+            <div class="col-lg-6 text-center">
+                <img src="Gambar/profile.jpg" class="img-fluid rounded-circle w-50" alt="Profile Picture">
+                <div class="social-icons">
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-twitter"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me -->
+    <section class="container my-5">
+        <h2 class="text-center">About Me</h2>
+        <p class="text-center">
+            Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in. Aliquet donec mauris
+            convallis pretium. Turpis tempor pharetra.
+        </p>
+
+        <div class="row text-center mt-4">
+            <div class="col-md-4">
+                <i class="fas fa-user fa-2x text-orange"></i>
+                <h5><b>Full Name</b></h5>
+                <p>John Doe</p>
+            </div>
+            <div class="col-md-4">
+                <i class="fas fa-graduation-cap fa-2x text-orange"></i>
+                <h5><b>Education</b></h5>
+                <p>Universitas Gajah Mada</p>
+            </div>
+            <div class="col-md-4">
+                <i class="fas fa-briefcase fa-2x text-orange"></i>
+                <h5><b>Pekerjaan</b></h5>
+                <p>Pelajar</p>
+            </div>
+        </div>
+
+        <div class="row text-center mt-4">
+            <div class="col-md-4">
+                <i class="fas fa-envelope fa-2x text-orange"></i>
+                <h5><b>Contact</b></h5>
+                <p>john.doe@example.com</p>
+                <p>+62 812 3456 7890</p>
+            </div>
+            <div class="col-md-4">
+                <i class="fas fa-heart fa-2x text-orange"></i>
+                <h5><b>Hobi</b></h5>
+                <p>Membaca Buku, Coding, Traveling</p>
+            </div>
+            <div class="col-md-4">
+                <i class="fas fa-map-marker-alt fa-2x text-orange"></i>
+                <h5><b>Alamat</b></h5>
+                <p>Jl. Mawar No. 92, Jakarta</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- My Projects -->
+    <section class="container my-5">
+        <h2 class="text-center">My Projects</h2>
+        <p class="text-center">
+            Lorem ipsum dolor sit amet consectetur. Mattis erat dui aliquet mauris est risus lectus. Phasellus consequat
+            urna tellus.
+        </p>
+
+        <div class="text-center mb-4">
+            <button class="btn btn-outline-dark">All</button>
+            <button class="btn btn-outline-dark">UI/UX</button>
+            <button class="btn btn-custom active">Web Design</button>
+            <button class="btn btn-outline-dark">App Design</button>
+            <button class="btn btn-outline-dark">Graphic Design</button>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card project-card">
+                    <img src="Gambar/project1.jpeg" class="card-img-top" alt="Project 1">
+                    <div class="card-body text-center">
+                        <span class="category">Web Design</span>
+                        <h5 class="card-title">AirCalling Landing Page Design</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card project-card">
+                    <img src="Gambar/project2.jpg" class="card-img-top" alt="Project 2">
+                    <div class="card-body text-center">
+                        <span class="category">Web Design</span>
+                        <h5 class="card-title">Business Landing Page Design</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card project-card">
+                    <img src="Gambar/project3.jpeg" class="card-img-top" alt="Project 3">
+                    <div class="card-body text-center">
+                        <span class="category">Web Design</span>
+                        <h5 class="card-title">Ecom Web Page Design</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>© 2024 FawziUI. All rights reserved.</p>
+    </footer>
+
+    <!-- Hire Me Modal -->
+    <div class="modal fade" id="hireMeModal" tabindex="-1" aria-labelledby="hireMeModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="hireMeModalLabel">Hire Me</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Silakan isi formulir di bawah ini untuk merekrut saya.</p>
+                    <form>
+                        <div class="mb-3">
+                            <label for="fullName" class="form-label">Your Name</label>
+                            <input type="text" class="form-control" id="fullName" placeholder="Enter your name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="company" class="form-label">Company (Optional)</label>
+                            <input type="text" class="form-control" id="company" placeholder="Enter your company name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="jobDetails" class="form-label">Job Details</label>
+                            <textarea class="form-control" id="jobDetails" rows="4"
+                                placeholder="Describe the job"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Submit Request</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+    <!-- Bootstrap JavaScript (harus dimuat agar tombol hamburger berfungsi) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
